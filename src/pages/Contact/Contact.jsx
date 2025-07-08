@@ -18,7 +18,7 @@ export const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(formValues);
-    navigate("/");
+    navigate("/", { state: formValues });
   };
 
   return (

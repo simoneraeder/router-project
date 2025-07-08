@@ -7,14 +7,21 @@ export const Navbar = () => {
         to="/"
         className={({ isActive }) => (isActive ? "link-ativo" : "")}
       >
-        {({ isActive }) => <span> {isActive ? "🏠 Home" : "Home"}</span>}
+        {({ isActive }) => <span>{isActive ? "🏠 Home" : "Home"}</span>}
       </NavLink>
       <br />
       <NavLink
         to="/contact"
         className={({ isActive }) => (isActive ? "link-ativo" : "")}
       >
-        {({ isActive }) => <span> {isActive ? "☎️ Contato" : "Contato"}</span>}
+        {({ isActive }) => (isActive ? "☎️ Contato" : "Contato")}
+      </NavLink>
+      <br />
+      <NavLink
+        to="/dashboard"
+        className={({ isActive }) => (isActive ? "link-ativo" : "")}
+      >
+        {({ isActive }) => (isActive ? "📶 Dashboard" : "Dashboard")}
       </NavLink>
     </>
   );
